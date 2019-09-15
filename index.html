@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="gb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1" id="viewport">
+    <link rel="stylesheet" href="css/gb/app.css">
+    <link rel="stylesheet" href="css/gb/common.css">
+    <title>Nivele Easy-to-use anti-cellulite body treatment</title>
+  </head>
+  <body class="lang_gb page_home page_cod">
+    <div class="page_wrapper">
+      <div class="warning_block">
+        <div class="wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="warning">
+                  <p> <span>Attention: </span>Because of all the media attention we have limited stock. As of  <i class="date"></i> only 52 items are still available. </p>
+                  <div class="close"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="greeting">
+        <div class="wrapper">
+          <div class="container">
+            <div class="image"><img src="img/common/greeting_image.png" alt=""></div>
+            <div class="row justify-content-end">
+              <div class="col-md-6">
+                <div class="site_name">Nivele</div>
+                <div class="title">
+                  <p>Product #1 </p>
+                  <p class="yellow">for Fighting <span> Cellulite,</span></p>
+                </div>
+                <div class="subtitle">Confirmed By Celebrities</div><a class="thx_button scroll_to_button" href="#scroll_to_form"><span>Order Nivele Cream</span></a>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <div class="top_part show_on_mobile">
+                  <div class="product"><img src="img/common/product.png" alt=""></div>
+                  <div class="description">
+                    <p>A Product Popular On Instagram <span>For Quick Win Over Cellulite</span></p>
+                  </div>
+                </div>
+                <ul class="form_list">
+                  <li>No more ‘orange peel’</li>
+                  <li>Beautiful legs, buttocks, and hips</li>
+                  <li>Fully eliminates bumps</li>
+                  <li>Increases skin health and elasticity</li>
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <div class="top_part flex_on_tablet flex_on_desc hide_on_mobile">
+                  <div class="product"><img src="img/common/product.png" alt=""></div>
+                  <div class="description">
+                    <p>A Product Popular On Instagram <span>For Quick Win Over Cellulite</span></p>
+                  </div>
+                </div>
+                <div class="form_part" id="form2">
+                  <div id="scroll_to_form"></div>
+                  <div class="form_title"><span>Discount 50% </span>goes to the end in: </div>
+                  <div class="timer_part">
+                    <div class="prices">
+                      <div class="new_price"><span class="big"><?=$currency?><?=$price['values']['amo_total_main_price']?></span></div>
+                      <div class="old_price">
+                        <div class="caption">Old price:</div>
+                        <div class="value"><?=$currency?><?=$price['values']['price2']?></div>
+                      </div>
+                    </div>
+                    <div class="timer" data-timer>
+                      <div class="unit days" data-pattern="{dnn}">
+                        <div class="value">00</div>
+                        <div class="desc">days</div>
+                      </div>
+                      <div class="unit hours" data-pattern="{hnn}">
+                        <div class="value">00</div>
+                        <div class="desc">hours</div>
+                      </div>
+                      <div class="unit minutes" data-pattern="{mnn}">
+                        <div class="value">00</div>
+                        <div class="desc">minutes</div>
+                      </div>
+                      <div class="unit seconds" data-pattern="{snn}">
+                        <div class="value">00</div>
+                        <div class="desc">seconds</div>
+                      </div>
+                    </div>
+                  </div>
+                  <form class="form" id="ajax_form_cod_2" action="" data-errorname="<?=$text['cod_form']['fields_placeholder'][0]?> <?=$text['order_form']['errors']['valid']?>" data-errorphone="<?=$text['cod_form']['fields_placeholder'][1]?> <?=$text['order_form']['errors']['valid']?>" data-errorphonenum_first="<?=$text['cod_form']['phonenum'][0]?>" data-errorphonenum_last="<?=$text['cod_form']['phonenum'][1]?>">
+                    <input type="hidden" name="user_ip" value="<?=get_client_ip()?>">
+                    <input type="hidden" name="session_id" value="<?=$_GET['session'] ?? ''?>">
+                    <input type="hidden" name="aff_id" value="<?=$_GET['aff_id'] ?? ''?>">
+                    <input type="hidden" name="aff_sub" value="<?=$_GET['aff_sub'] ?? ''?>">
+                    <input type="hidden" name="aff_sub2" value="<?=$_GET['aff_sub2'] ?? ''?>">
+                    <input type="hidden" name="aff_sub3" value="<?=$_GET['aff_sub3'] ?? ''?>">
+                    <input type="hidden" name="aff_sub4" value="<?=$_GET['aff_sub4'] ?? ''?>">
+                    <input type="hidden" name="aff_sub5" value="<?=$_GET['aff_sub5'] ?? ''?>">
+                    <select class="county_select" name="country">
+                      	<?php foreach ($text['cod_country'] as $key => $value) { ?>
+                      	<?php echo '<option value="'.$value['domain'].'">'.$value['name'].'</option>'; ?>
+                      	<?php } ?>
+                      <div class="field name"></div>
+                    </select>
+                    <div class="field name">
+                      <input type="text" data-error-name="Name" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="field phone">
+                      <input type="tel" data-error-name="Phone" name="phone" placeholder="Phone number">
+                    </div>
+                    <div class="discount_popup__agree">
+                      <div class="discount_popup__agree__flex">
+                        <input class="discount_popup__agree__checkbox" id="agree__checkbox_first_1" type="checkbox" name="agree" value="1">
+                        <label class="discount_popup__agree__label" for="agree__checkbox_first_1"><?=$text['cod_form']['agree'][0]?><a href="#" data-popup="#page_privacy_cod"><?=$text['order_form']['privat_policy']?></a><?=$text['cod_form']['agree'][1]?></label>
+                      </div>
+                      <div class="discount_popup__agree__error"><?=$text['cod_form']['agree_error']?></div>
+                    </div>
+                    <button class="submit_form" type="submit">Order Now</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reason">
+        <div class="wrapper">
+          <div class="container">
+            <div class="before_radius"></div>
+            <div class="image"><img src="img/common/reason_image.png" alt=""></div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="subtitle">Cellulite Is The Main Reason</div>
+                <div class="title">Why Women Become Less Sexy!</div>
+                <div class="text">
+                  <p>Statistically, over time cellulite appears in all women. If you don’t lead a healthy lifestyle, don’t eat healthily, and don’t move much, it will appear much earlier and will be more noticeable.</p>
+                  <p>However, a new cream called Nivele can help, even in the most severe cases. <span>It is so highly effective in fighting orange peel’ and swelling that international celebrities prefer it over expensive creams.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="works">
+        <div class="wrapper">
+          <div class="container">
+            <div class="subtitle">Nivele Breaks Subcutaneous Fat Down, And Gives A Smooths Skin!</div>
+            <div class="title">See How The Cream Works!</div>
+            <div class="works_main">
+              <div class="before">before</div>
+              <div class="for_twentytwenty">
+                <div class="before_image"><img src="img/common/before_image.png" alt=""></div>
+                <div class="after_image"><img src="img/common/after_image.png" alt=""></div>
+              </div>
+              <div class="after">after</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="problems">
+        <div class="wrapper">
+          <div class="container">
+            <div class="before_radius"></div>
+            <div class="title">10,894 Women Confirmed That Nivele Cream Helps Them Deal <span>With The Following Problems:</span></div>
+            <ul class="problems_main">
+              <li class="item">
+                <div class="icon"></div>
+                <div class="description"><span>Cellulite </span>on hips</div>
+              </li>
+              <li class="item">
+                <div class="icon"></div>
+                <div class="description"><span>Cellulite </span>on abdomen</div>
+              </li>
+              <li class="item">
+                <div class="icon"></div>
+                <div class="description"><span>Cellulite </span>on buttocks</div>
+              </li>
+              <li class="item">
+                <div class="icon"></div>
+                <div class="description"><span>Cellulite </span>on legs</div>
+              </li>
+              <li class="item">
+                <div class="icon"></div>
+                <div class="description">Skin <span>swelling</span></div>
+              </li>
+              <li class="item">
+                <div class="icon"></div>
+                <div class="description">The onset of <span>varicosity</span></div>
+              </li>
+              <li class="item">
+                <div class="icon"></div>
+                <div class="description">Starburst <span>veins</span></div>
+              </li>
+              <li class="item">
+                <div class="icon"></div>
+                <div class="description"><span>Stretch </span>marks</div>
+              </li>
+              <li class="item">
+                <div class="icon"></div>
+                <div class="description">Leg <span>pains</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="ability">
+        <div class="wrapper">
+          <div class="container">
+            <div class="before_radius"></div>
+            <div class="ability_main">
+              <div class="text_part">
+                <div class="before_text"></div>
+                <div class="title">The Ability Of Nivele Cream <span>To Smooth Out Cellulite,</span></div>
+                <div class="subtitle">Even at the latest stages was proven by clinical research</div>
+                <div class="text">
+                  <p>Most likely you already tried to smooth out your cellulite with the help of other creams, and it’s likely that they were of no help. But Nivele is an unusual cream. It implements a new technology of disintegrating active substances to the size of nanoparticles. This is why active substances of the cream easily penetrate all skin layers and reach the area where cellulite is formed, the subcutaneous fatty tissue. <span>Once there, active substances of the cream quickly destroy the accumulation of fat and smooth out the ugly bumps.</span></p>
+                  <p>Since Nivele cream is aimed at eliminating the causes of cellulite, it helps at all stages, including the severe cases of cellulite. <span class="pink">In effect, it’s similar to physical exercise, it also improves metabolism in problematic zones.</span></p>
+                </div>
+              </div>
+              <div class="before_after_part">
+                <div class="before">
+                  <div class="image"><img src="img/common/ability_before_image.png" alt=""></div>
+                  <div class="description">before</div>
+                </div>
+                <div class="after">
+                  <div class="description">after</div>
+                  <div class="image"><img src="img/common/ability_after_image.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="helps">
+        <div class="wrapper">
+          <div class="container">
+            <div class="image"><img src="img/common/helps_image.png" alt=""></div>
+            <div class="row justify-content-end">
+              <div class="col-md-6">
+                <div class="subtitle">Try An Anti-Cellulite Cream </div>
+                <div class="title">That Helps Everyone! </div><a class="thx_button scroll_to_button" href="#scroll_to_form"><span>Order Nivele Cream</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="magazines">
+        <div class="wrapper">
+          <div class="container">
+            <div class="before_radius"></div>
+            <div class="image"><img src="img/common/magazines_image.png" alt=""></div>
+            <div class="row">
+              <div class="col-md-7">
+                <div class="title">Many Known Magazines <span>Wrote About Nivele Cream:</span></div>
+                <ul class="magazines_list">
+                  <li class="item">
+                    <div class="icon"><img src="img/common/magazine_image-1.png" alt=""></div>
+                    <div class="caption">Cosmopolitan</div>
+                    <div class="date">March 2017</div>
+                  </li>
+                  <li class="item">
+                    <div class="icon"><img src="img/common/magazine_image-2.png" alt=""></div>
+                    <div class="caption">Marie Claire</div>
+                    <div class="date">February 2017</div>
+                  </li>
+                  <li class="item">
+                    <div class="icon"><img src="img/common/magazine_image-3.png" alt=""></div>
+                    <div class="caption">ELLE</div>
+                    <div class="date">May 2017</div>
+                  </li>
+                  <li class="item">
+                    <div class="icon"><img src="img/common/magazine_image-4.png" alt=""></div>
+                    <div class="caption">Harper’s Bazaar</div>
+                    <div class="date">June 2017</div>
+                  </li>
+                  <li class="item">
+                    <div class="icon"><img src="img/common/magazine_image-5.png" alt=""></div>
+                    <div class="caption">W</div>
+                    <div class="date">October 2017</div>
+                  </li>
+                  <li class="item">
+                    <div class="icon"><img src="img/common/magazine_image-6.png" alt=""></div>
+                    <div class="caption">Vanity Fair</div>
+                    <div class="date">January 2018</div>
+                  </li>
+                  <li class="item">
+                    <div class="icon"><img src="img/common/magazine_image-7.png" alt=""></div>
+                    <div class="caption">Glamour</div>
+                    <div class="date">February 2018</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contents">
+        <div class="wrapper">
+          <div class="container">
+            <div class="title">Thoroughly Balanced Contents</div>
+            <div class="subtitle">Won’t Give Cellulite A Chance At Several Levels</div>
+            <div class="contents_main">
+              <ul class="contents_part">
+                <li class="item">
+                  <div class="icon"><img src="img/common/consist_image-1.jpg" alt=""></div>
+                  <div class="description">
+                    <div class="caption">Seaweed Extract</div>
+                    <ul class="list">
+                      <li>Activates skin renovation processes</li>
+                      <li>Increases capillary permeability</li>
+                      <li>Eliminates swelling</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="icon"><img src="img/common/consist_image-2.jpg" alt=""></div>
+                  <div class="description">
+                    <div class="caption">Cola extract</div>
+                    <ul class="list">
+                      <li>Disintegrates subcutaneous fat</li>
+                      <li>Normalizes metabolic processes</li>
+                      <li>Improves lymphatic drainage</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="icon"><img src="img/common/consist_image-3.jpg" alt=""></div>
+                  <div class="description">
+                    <div class="caption">Caffeine</div>
+                    <ul class="list">
+                      <li>Accelerates metabolism</li>
+                      <li>Quickly disintegrates fat accumulation</li>
+                      <li>Enhances the effect of other cream components by 5-7 times</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="icon"><img src="img/common/consist_image-4.jpg" alt=""></div>
+                  <div class="description">
+                    <div class="caption">Calendula Extract</div>
+                    <ul class="list">
+                      <li>Dissolves hydrophobic toxins</li>
+                      <li>Strengthens blood vessels</li>
+                      <li>Increases skin resilience and health</li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+              <div class="product_part">
+                <div class="product"><img src="img/common/product.png" alt="">
+                  <div class="product_box"></div>
+                </div>
+                <ul class="icons">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul><a class="thx_button scroll_to_button" href="#scroll_to_form"><span>Order Nivele Cream</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="result">
+        <div class="wrapper">
+          <div class="container">
+            <div class="title">They Already Used Nivele Cream <span>And The Result Is Stunning!</span></div>
+            <div class="result_carusel_container">
+              <ul class="result_carusel">
+                <li class="item">
+                  <div class="top_part">
+                    <div class="ava ava_1"></div>
+                    <div class="name">username</div>
+                    <div class="dots"></div>
+                  </div>
+                  <div class="image"><img src="img/common/review_image-1.jpg" alt=""></div>
+                  <div class="bottom_part">
+                    <div class="icons"></div>
+                    <div class="flag"></div>
+                  </div>
+                  <div class="footer_part">
+                    <p><span>name, </span>age, city</p>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="top_part">
+                    <div class="ava ava_2"></div>
+                    <div class="name">username</div>
+                    <div class="dots"></div>
+                  </div>
+                  <div class="image"><img src="img/common/review_image-2.jpg" alt=""></div>
+                  <div class="bottom_part">
+                    <div class="icons"></div>
+                    <div class="flag"></div>
+                  </div>
+                  <div class="footer_part">
+                    <p><span>name, </span>age, city</p>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="top_part">
+                    <div class="ava ava_3"></div>
+                    <div class="name">username</div>
+                    <div class="dots"></div>
+                  </div>
+                  <div class="image"><img src="img/common/review_image-3.jpg" alt=""></div>
+                  <div class="bottom_part">
+                    <div class="icons"></div>
+                    <div class="flag"></div>
+                  </div>
+                  <div class="footer_part">
+                    <p><span>name, </span>age, city</p>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="top_part">
+                    <div class="ava ava_4"></div>
+                    <div class="name">username</div>
+                    <div class="dots"></div>
+                  </div>
+                  <div class="image"><img src="img/common/review_image-4.jpg" alt=""></div>
+                  <div class="bottom_part">
+                    <div class="icons"></div>
+                    <div class="flag"></div>
+                  </div>
+                  <div class="footer_part">
+                    <p><span>name, </span>age, city</p>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="top_part">
+                    <div class="ava ava_5"></div>
+                    <div class="name">username</div>
+                    <div class="dots"></div>
+                  </div>
+                  <div class="image"><img src="img/common/review_image-5.jpg" alt=""></div>
+                  <div class="bottom_part">
+                    <div class="icons"></div>
+                    <div class="flag"></div>
+                  </div>
+                  <div class="footer_part">
+                    <p><span>name, </span>age, city</p>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="top_part">
+                    <div class="ava ava_6"></div>
+                    <div class="name">username</div>
+                    <div class="dots"></div>
+                  </div>
+                  <div class="image"><img src="img/common/review_image-6.jpg" alt=""></div>
+                  <div class="bottom_part">
+                    <div class="icons"></div>
+                    <div class="flag"></div>
+                  </div>
+                  <div class="footer_part">
+                    <p><span>name, </span>age, city</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="instagram_review">
+        <div class="wrapper">
+          <div class="container">
+            <div class="before_radius"></div>
+            <div class="title"> Nivele Cream Is The Most Popular Product <span>On Instagram For Eliminating Cellulite</span></div>
+            <div class="slider_container">
+              <ul class="insta_slider">
+                <li class="item">
+                  <div class="image image_1"></div>
+                  <div class="descripton">
+                    <div class="review_head">
+                      <div class="icon avatar_1"></div>
+                      <div class="name">username, 32</div>
+                    </div>
+                    <div class="review_body">
+                      <div class="text">
+                        <p><span>username </span>Awful cellulite was bothering me for a few years. I first started having it after pregnancy. It is completely gone now. The new Nivele cream helped 👍 I read many reviews about it and decided to give  it a try myself. I really liked the result. 💜</p>
+                        <div class="hash_tags">#creamforcellulite #naturalcream #goodbyecellulite #evenskin #beautifulhips</div>
+                      </div>
+                    </div>
+                    <div class="reviews_bottom">
+                      <div class="icon_1"></div>
+                      <div class="icon_2"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="image image_2"></div>
+                  <div class="descripton">
+                    <div class="review_head">
+                      <div class="icon avatar_2"></div>
+                      <div class="name">username, 29</div>
+                    </div>
+                    <div class="review_body">
+                      <div class="text">
+                        <p><span>username  </span>Getting rid of cellulite after 4 years of unsuccessful fighting. Lately, I’ve been embarrassed of taking my clothes off even in front of my husband. But now, everything is alright, the cellulite is barely visible. The miraculous Nivele cream helped. 🙏</p>
+                        <div class="hash_tags">#supercream #cellulite #cream #naturalcosmetics</div>
+                      </div>
+                    </div>
+                    <div class="reviews_bottom">
+                      <div class="icon_1"></div>
+                      <div class="icon_2"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="image image_3"></div>
+                  <div class="descripton">
+                    <div class="review_head">
+                      <div class="icon avatar_3"></div>
+                      <div class="name">username, 26</div>
+                    </div>
+                    <div class="review_body">
+                      <div class="text">
+                        <p><span>username </span>I was impressed by Nivele cream. I had little cellulite but couldn’t get rid of it. The cream eliminated it within 10 days. Now, I have beautiful legs and buttocks again. ✌️ I recommend it to everyone! 👍</p>
+                        <div class="hash_tags">#myfavouritecream #forcellulite #orangepeel #beautifulskin #youth #multivitamincream</div>
+                      </div>
+                    </div>
+                    <div class="reviews_bottom">
+                      <div class="icon_1"></div>
+                      <div class="icon_2"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="image image_4"></div>
+                  <div class="descripton">
+                    <div class="review_head">
+                      <div class="icon avatar_4"></div>
+                      <div class="name">username, 35</div>
+                    </div>
+                    <div class="review_body">
+                      <div class="text">
+                        <p><span>username </span>I started having severe cellulite after turning 30. My legs started aching. Recently, I learnt about Nivele cream from a friend. It turned out to be very effective. Cellulite became way less visible. I think it’s a great result for my age. 🙌</p>
+                        <div class="hash_tags">#creamforcellulite #goodbyecellulite #orangepeel #skinbumps #organics</div>
+                      </div>
+                    </div>
+                    <div class="reviews_bottom">
+                      <div class="icon_1"></div>
+                      <div class="icon_2"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="image image_5"></div>
+                  <div class="descripton">
+                    <div class="review_head">
+                      <div class="icon avatar_5"></div>
+                      <div class="name">username, 24</div>
+                    </div>
+                    <div class="review_body">
+                      <div class="text">
+                        <p><span>username </span>Nivele cream for cellulite is a real discovery. There are many different products nowadays, but none of them helped me, until I learnt about this cream. My skin became even within a matter off days! It’s a stunning effect.</p>
+                        <div class="hash_tags">#сellulite #orangepeel #smoothlegs #naturalcream</div>
+                      </div>
+                    </div>
+                    <div class="reviews_bottom">
+                      <div class="icon_1"></div>
+                      <div class="icon_2"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="item">
+                  <div class="image image_6"></div>
+                  <div class="descripton">
+                    <div class="review_head">
+                      <div class="icon avatar_6"></div>
+                      <div class="name">username, 31</div>
+                    </div>
+                    <div class="review_body">
+                      <div class="text">
+                        <p><span>username </span>That praised cream for cellulite, Nivele, helped me as well. Now I am no longer ashamed of going to the beach, I didn’t know what to do before. 😱 What I liked the most is that the effect is achievable without any exercising. You just apply the cream, and cellulite disappears on its own 👍 👍</p>
+                        <div class="hash_tags">#saynotocellulite #iamtheprettiest #beautifulskin #irecommend</div>
+                      </div>
+                    </div>
+                    <div class="reviews_bottom">
+                      <div class="icon_1"></div>
+                      <div class="icon_2"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="easy">
+        <div class="wrapper">
+          <div class="container">
+            <div class="before_radius"></div>
+            <div class="row">
+              <div class="col-md-7 col-lg-6">
+                <div class="title">
+                  <p>Getting Rid </p>
+                  <p>Of Cellulite Is Easy With Nivele Cream!</p>
+                </div>
+                <div class="subtitle">
+                  <p>Order The New Innovative </p>
+                  <p>Miracle-Cream With A Discount!</p>
+                </div><a class="thx_button scroll_to_button" href="#scroll_to_form"><span>Order Nivele Cream</span></a>
+              </div>
+              <div class="col-md-5 col-lg-6">
+                <div class="product"><img src="img/common/product.png" alt="">
+                  <div class="icons">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="wrapper">
+          <div class="container">
+            <div class="before_radius"></div>
+            <div class="title">We Received More Than 300 Letters With Reviews To Our E-Mail,</div>
+            <div class="subtitle">Only A Few Of Them Are Presented Below</div>
+            <div class="video">
+              <div class="youtube" data-embed="ldgVPd21BmY">
+                <div class="play-button"></div>
+              </div>
+              <div class="youtube" data-embed="Sc3X2FtIN6w">
+                <div class="play-button"></div>
+              </div>
+            </div>
+            <div class="slider_container">
+              <ul class="reviews_slider">
+                <li class="slide">
+                  <div class="icon"><img src="img/common/be_af_review_image-1.png" alt="">
+                    <div class="before">before</div>
+                    <div class="after">after</div>
+                  </div>
+                  <div class="description">
+                    <div class="review_head">
+                      <div class="name">Name,  <span>34.y.o, city</span></div>
+                      <div class="stars"></div>
+                    </div>
+                    <div class="review_body">
+                      <div class="caption"> The cream is awesome, especially at such a price </div>
+                      <div class="text">
+                        <p>The cream is wonderful! I used to have cellulite, my legs suffered from it for many years. I tried everything, from different creams and folk remedies to parlour anti-cellulite programs. Nothing helped me like Nivele. 90-95% of cellulite disappeared within one month only! The cream is awesome, especially at such a price. It’s a pleasant surprise.</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide">
+                  <div class="icon"><img src="img/common/be_af_review_image-2.png" alt="">
+                    <div class="before">before</div>
+                    <div class="after">after</div>
+                  </div>
+                  <div class="description">
+                    <div class="review_head">
+                      <div class="name">Name, <span>28.y.o, city</span></div>
+                      <div class="stars"></div>
+                    </div>
+                    <div class="review_body">
+                      <div class="caption"> Orange peel disappeared completely </div>
+                      <div class="text">
+                        <p>I liked the effect of this cream. My skin did become smoother, more even and resilient. I didn’t have severe cellulite (it appeared only a couple of years ago), but orange peel disappeared completely. Additionally, starburst veins disappeared, and the colour of my skin improved. I used Nivele cream for about 2 weeks. I recommended it to a friend of mine, she liked it as well</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide">
+                  <div class="icon"><img src="img/common/be_af_review_image-3.png" alt="">
+                    <div class="before">before</div>
+                    <div class="after">after</div>
+                  </div>
+                  <div class="description">
+                    <div class="review_head">
+                      <div class="name">Name,  <span>38.y.o, city</span></div>
+                      <div class="stars"></div>
+                    </div>
+                    <div class="review_body">
+                      <div class="caption"> It helps even in cases of severe cellulite! </div>
+                      <div class="text">
+                        <p>My husband left me after I began having cellulite. I started looking very unattractive, indeed. Everything went even worse after the divorce. My doctor said it happened due to stress. As a result, I spent almost 5 years fighting cellulite. A serious inferiority complex developed during that time, I couldn’t take my clothes off even on a beach. I don’t know what would have happened, hadn’t I found out about this cream. It literally saved me. I can’t say that cellulite disappeared quickly (I had 3d stage case), but it did disappear completely! My skin is lifted and smooth again. I recommend this cream lots to everyone who hasn’t tried it yet and suffers from cellulite. Nivele cream helps even in cases of severe cellulite!</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide">
+                  <div class="icon"><img src="img/common/be_af_review_image-4.png" alt="">
+                    <div class="before">before</div>
+                    <div class="after">after</div>
+                  </div>
+                  <div class="description">
+                    <div class="review_head">
+                      <div class="name">Name,  <span>33.y.o, city</span></div>
+                      <div class="stars"></div>
+                    </div>
+                    <div class="review_body">
+                      <div class="caption"> Cellulite is not noticeable even if I squeeze my skin</div>
+                      <div class="text">
+                        <p>It’s a magical cream. It helped me to get rid of cellulite of the 3d stage. I was only applying the cream. I didn’t do anything else, I wasn’t following a diet or exercising. It helped me all the same. My skin became noticeably smoother and more lifted. Cellulite is not noticeable even if I squeeze my skin. I’ll use this cream all the time now. Finally, scientists have developed something worthy to fight this problem that many women encounter. Thank you very much!</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="alma">
+        <div class="wrapper">
+          <div class="container">
+            <div class="image"><img src="img/common/alma_image.png" alt=""></div>
+            <div class="row">
+              <div class="col-md-8 col-lg-5">
+                <div class="title">Nivele Cream Helped Alma<span>To Perform At Eurovision 2017</span></div>
+                <div class="text">
+                  <p><span>Alma, a French contestant, had to perform at Eurovision 2017 in a short dress. </span>However, due to endless rehearsals before the competition and consequent extreme fatigue, lack of sleep, and stress, she started having a lot of cellulite on her thighs. As Alma herself said, it was so horrible she was considering performing in trousers. However, a personal cosmetologist of the performer advised her to use an innovative Nivele cream (it wasn’t in the market yet at the time). We can see how much it helped from Alma’s performance. <span>Her legs and a short dress were magnificent, matching the spirit of France. Alma admitted to our reporter that she still uses this cream, it became her favourite one.</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="application">
+        <div class="wrapper">
+          <div class="container">
+            <div class="title">Simple Application For Maximum Effect!</div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="item">
+                  <div class="icon icon-1"></div>
+                  <div class="description"><span>Apply the cream </span>to problematic zones in massaging movements.</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="item">
+                  <div class="icon icon-2"></div>
+                  <div class="description"><span> Repeat 2-3 times </span> a day.</div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="item">
+                  <div class="icon icon-3"></div>
+                  <div class="description"><span> Enjoy a smoother and more lifted skin </span> already in 1-2 weeks of application.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sending">
+        <div class="wrapper">
+          <div class="container">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <div class="order">
+                  <div class="title">How to Order?</div>
+                  <ol class="order_list">
+                    <li class="item">
+                      <div class="order_icon order_icon-1"></div>
+                      <div class="description">
+                        <div class="caption">Fill in the order form below</div>
+                        <p>(Your name and your contact telephone number)</p>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="order_icon order_icon-2"></div>
+                      <div class="description">
+                        <div class="caption">Confirm the delivery address, type and date</div>
+                        <p>(Manager will call you after the order)</p>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="order_icon order_icon-3"></div>
+                      <div class="description">
+                        <div class="caption">Recieve the product and pay</div>
+                        <p>(Payment upon delivery to courier or at post office)</p>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="delivery">
+                  <div class="subtitle"><span>Delivery </span>All Over Europe!</div>
+                  <ul class="delivery_list">
+                    <li>You will recieve your Nivele Cream in 2-7 days after the order.</li>
+                    <li>Pay only after recieving the package!</li>
+                  </ul>
+                  <ul class="icons_list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                  <div class="image"><img src="img/common/product.png" alt="">
+                    <div class="box"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="form_section">
+        <div class="wrapper">
+          <div class="container">
+            <div class="image"><img src="img/common/form_part_image.png" alt=""></div>
+            <div class="row no-gutters align-items-end">
+              <div class="col-md-4 form_none">
+                <div class="top_part show_on_mobile">
+                  <div class="product"><img src="img/common/product.png" alt=""></div>
+                  <div class="icons_list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </div>
+                </div>
+                <ul class="form_list">
+                  <li>No more ‘orange peel’</li>
+                  <li>Beautiful legs, buttocks, and hips</li>
+                  <li>Fully eliminates bumps</li>
+                  <li>Increases skin health and elasticity</li>
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <div class="top_part hide_on_mobile">
+                  <div class="product"><img src="img/common/product.png" alt=""></div>
+                  <div class="icons_list">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </div>
+                </div>
+                <div class="form_part" id="form">
+                  <div class="form_title"><span>Discount 50% </span>goes to the end in: </div>
+                  <div class="timer_part">
+                    <div class="prices">
+                      <div class="new_price"><span class="big"><?=$currency?><?=$price['values']['amo_total_main_price']?></span></div>
+                      <div class="old_price">
+                        <div class="caption">Old price:</div>
+                        <div class="value"><?=$currency?><?=$price['values']['price2']?></div>
+                      </div>
+                    </div>
+                    <div class="timer" data-timer>
+                      <div class="unit days" data-pattern="{dnn}">
+                        <div class="value">00</div>
+                        <div class="desc">days</div>
+                      </div>
+                      <div class="unit hours" data-pattern="{hnn}">
+                        <div class="value">00</div>
+                        <div class="desc">hours</div>
+                      </div>
+                      <div class="unit minutes" data-pattern="{mnn}">
+                        <div class="value">00</div>
+                        <div class="desc">minutes</div>
+                      </div>
+                      <div class="unit seconds" data-pattern="{snn}">
+                        <div class="value">00</div>
+                        <div class="desc">seconds</div>
+                      </div>
+                    </div>
+                  </div>
+                  <form class="form" id="ajax_form_cod" action="" data-errorname="<?=$text['cod_form']['fields_placeholder'][0]?> <?=$text['order_form']['errors']['valid']?>" data-errorphone="<?=$text['cod_form']['fields_placeholder'][1]?> <?=$text['order_form']['errors']['valid']?>" data-errorphonenum_first="<?=$text['cod_form']['phonenum'][0]?>" data-errorphonenum_last="<?=$text['cod_form']['phonenum'][1]?>">
+                    <input type="hidden" name="user_ip" value="<?=get_client_ip()?>">
+                    <input type="hidden" name="session_id" value="<?=$_GET['session'] ?? ''?>">
+                    <input type="hidden" name="aff_id" value="<?=$_GET['aff_id'] ?? ''?>">
+                    <input type="hidden" name="aff_sub" value="<?=$_GET['aff_sub'] ?? ''?>">
+                    <input type="hidden" name="aff_sub2" value="<?=$_GET['aff_sub2'] ?? ''?>">
+                    <input type="hidden" name="aff_sub3" value="<?=$_GET['aff_sub3'] ?? ''?>">
+                    <input type="hidden" name="aff_sub4" value="<?=$_GET['aff_sub4'] ?? ''?>">
+                    <input type="hidden" name="aff_sub5" value="<?=$_GET['aff_sub5'] ?? ''?>">
+                    <select class="county_select" name="country">
+                      	<?php foreach ($text['cod_country'] as $key => $value) { ?>
+                      	<?php echo '<option value="'.$value['domain'].'">'.$value['name'].'</option>'; ?>
+                      	<?php } ?>
+                      <div class="field name"></div>
+                    </select>
+                    <div class="field name">
+                      <input type="text" data-error-name="Name" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="field phone">
+                      <input type="tel" data-error-name="Phone" name="phone" placeholder="Phone number">
+                    </div>
+                    <div class="discount_popup__agree">
+                      <div class="discount_popup__agree__flex">
+                        <input class="discount_popup__agree__checkbox" id="agree__checkbox_first_2" type="checkbox" name="agree" value="1">
+                        <label class="discount_popup__agree__label" for="agree__checkbox_first_2"><?=$text['cod_form']['agree'][0]?><a href="#" data-popup="#page_privacy_cod"><?=$text['order_form']['privat_policy']?></a><?=$text['cod_form']['agree'][1]?></label>
+                      </div>
+                      <div class="discount_popup__agree__error"><?=$text['cod_form']['agree_error']?></div>
+                    </div>
+                    <button class="submit_form" type="submit">Order Now</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <p>© 2018 Nivele Cream. All rights reserved.</p>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="row top_line align-items-center">
+            <div class="col-xl-6 col-lg-8 col-md-12">
+              <div class="footer_menu">
+                <li><a href="#" data-popup="#page_terms">Terms and Conditions</a></li>
+                <li><a href="#" data-popup="#page_privacy_cod">Privacy Policy</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="popup step_link" id="step_1">
+        <div class="close_container"></div><?php include $cart_folder."inc/cod_popup/popup.php"; ?>
+      </div>
+      <div class="popup" id="doctor">
+        <div class="close_container"></div>
+        <div class="popup_container">
+          <div class="close"></div>
+          <div class="doctor_head">
+            <div class="logo_list"><span class="item_1"></span><span class="item_2"></span><span class="item_3"></span></div>
+            <div class="doctor_image"></div>
+          </div>
+          <div class="scroll_container">
+            <div class="doctor_sertificate">
+              <div class="bg"></div>
+              <div class="text">
+                <h4>Decision of the commission:</h4>
+                <p>The product is completely natural, highly effective, harmless to people, and then without any restrictions can be used in the home as a basic or auxiliary mean.</p><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="page_terms">
+        <div class="close_container"></div>
+        <div class="popup_container">
+          <div class="close"></div>
+          <div class="title"> <strong>Nivele Easy-to-use anti-cellulite body treatment </strong>Terms and Conditions</div>
+          <div class="scroll_container">
+            <p>Welcome to  <strong>NIVELE </strong>, and thank you for considering our products and services. Guarding your personal information is very important to us; the following policy explains how your information is used and protected. As stated in our Terms and Conditions, our Privacy Policy forms part of your legal agreement with us. Your use of this Website signifies your agreement with all terms of our Privacy Policy. Please do not use this Website if you disagree with any part of our Privacy Policy.</p>
+            <p>PLEASE NOTE: OUR TERMS and CONDITIONS and PRIVACY POLICY CHANGES FROM TIME TO TIME AND CHANGES ARE EFFECTIVE UPON POSTING AT THIS WEBSITE. PLEASE CHECK BACK FREQUENTLY FOR UPDATES AS IT IS YOUR SOLE RESPONSIBILITY TO BE AWARE OF CHANGES. </p>
+            <p><strong>NIVELE </strong> DOES NOT PROVIDE NOTICES OF CHANGES IN ANY MANNER OTHER THAN BY POSTING THE CHANGES AT THIS WEBSITE. </p>
+            <p>IF YOU DO NOT AGREE WITH THIS TERMS and CONDITIONS and/or our PRIVACY POLICY, PLEASE DO NOT PROVIDE ANY INFORMATION TO NIVELE OR USE ANY OF THE SERVICES OR PRODUCTS OFFERED ON THE WEBSITES REFERRED TO IN AND IN OUR PRIVACY POLICY. </p>
+            <p>THESE TERMS AND CONDITIONS (“TERMS”) AND THE TERMS CONTAINED WITHIN THE WEBSITE DISCLAIMER APPLY TO YOUR USE OF THIS WEBSITE AND ANY PURCHASE YOU MAKE. YOU WILL NEED TO CONFIRM THAT YOU HAVE READ AND UNDERSTOOD THESE TERMS AND CONDITIONS AND OUR DISCLAIMER IN ORDER TO PROCEED WITH YOUR ORDER AND TO MAKE A PURCHASE. </p>
+            <p>YOU WILL BE ABLE TO PRINT OFF A COPY OF THESE TERMS AND CONDITIONS – WE RECOMMEND THAT YOU DO THIS AND KEEP A COPY FOR YOUR FUTURE REFERENCE. YOU WILL ALSO NEED TO CONFIRM THAT YOU CONSENT TO OUR PROCESSING OF YOUR PERSONAL DATA IN ORDER TO PROCEED WITH A PURCHASE. PLEASE READ THE TERMS AND CONDITIONS WHICH DEAL WITH OUR USE OF YOUR PERSONAL DATA CAREFULLY BEFORE SUBMITTING YOUR ORDER. </p>
+            <p>BY PLACING AN ORDER THROUGH THIS WEBSITE, YOU ACKNOWLEDGE AND AGREE TO BE BOUND BY ALL OF THIS TERMS AND CONDITIONS STATED HEREIN. IF YOU DO NOT AGREE TO THE TERMS AND CONDITIONS BELOW AND/OR OUR PROCESSING OF YOUR PERSONAL DATA IN ACCORDANCE WITH THESE TERMS AND CONDITIONS AND PRIVACY POLICY, PLEASE DO NOT PLACE ANY ORDER WITH US. </p>
+            <p>By makingorder through this Website You warrant that You are at least 18 years old and capable of entering into binding contracts. You further warrant that you understand and agree to be bound by these Terms and Conditions and our Privacy Policy. </p>
+            <h4>Definitions </h4>
+            <p>In these Terms, the following words have the following meanings unless the context otherwise requires: </p>
+            <table colspan="0">
+              <tbody>
+                <tr>
+                  <td>“Contract”</td>
+                  <td>means any contract between Customer and NIVELE incorporating these Terms for the supply of Products and Services; </td>
+                </tr>
+                <tr>
+                  <td>“Liability”</td>
+                  <td>means liability for any and all damages, claims, proceedings, actions, awards, expenses, costs and any other losses and/or liabilities;</td>
+                </tr>
+                <tr>
+                  <td>“Products” </td>
+                  <td>means any and all products ordered from Us by You;</td>
+                </tr>
+                <tr>
+                  <td>“We, Us, Our”, “Company”</td>
+                  <td>means NIVELE operated by LIMITED; </td>
+                </tr>
+                <tr>
+                  <td>“Website”</td>
+                  <td>means https://nivele.com/;</td>
+                </tr>
+                <tr>
+                  <td>“Services,” “Product” </td>
+                  <td>means any and all services ordered from Us by You;</td>
+                </tr>
+                <tr>
+                  <td>“You, Your, Yourself” or “Customer”</td>
+                  <td>means the person whose order for Products and/or Services is accepted by Us.</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>1. Terms and Conditions</h4>
+            <p>1.1 These Terms govern the supply of Products and Services to You.</p>
+            <p>1.2 It is Your responsibility to ensure that Your use of the Website and the purchase of the Products and/or Services is legal in the country in which You are resident and/or in which You are viewing this Website.</p>
+            <h4>2. Basis of Contract</h4>
+            <p>2.1 These Terms and any document or disclaimer referred to in them represent the entire agreement between You and Us in relation to the supply of any Products and/or Services via the Website.</p>
+            <p>2.2 These Terms supersede all previous terms and conditions, prior agreements, representations, understandings or arrangements and shall replace any terms and conditions previously available on this Website or notified to You. You acknowledge that in entering into a Contract with Us You have not relied upon any representation, undertaking or promise previously given or implied from anything said in negotiations or otherwise prior to such Contract save as is expressly set out in these Terms.</p>
+            <p>2.3 We have the right to modify, vary or amend these Terms from time to time.</p>
+            <p>2.4 We reserve the right to change and modify these Terms without prior notice. You will be subject to the terms and conditions in force at the time that You order Products and/or Services from Us.</p>
+            <h4>3. Orders and Contracts</h4>
+            <p>3.1 You may place your orders for Products and/or Services via the Website.</p>
+            <p>3.2 We have the right to refuse to accept any orders placed for Products and/or Services. Your order for Products and/or Services constitutes an offer to Us to buy those Products and/or Services and shall only form a binding Contract when We send Our order confirmation to You by e-mail.</p>
+            <p>3.3 You shall be responsible for the accuracy of Your order and for giving Us any and all information necessary for Us to perform the Contract. When You input Your details via the Website, You are responsible for ensuring that all information You give Us is correct. Our ordering process on the Website will provide You with instructions on how to correct any input errors.</p>
+            <p>3.4 Products are subject to availability. If We are unable to supply You with the Products due to the fact that they are out of stock, We will inform You as soon as possible. You will be given the option of (i) waiting until the Products are in stock when We will perform the Contract; or (ii) cancelling Your affected order and obtaining a full refund (if We have already received payment from You).</p>
+            <p>3.5 We try to ensure that all details contained within the Website are as accurate as possible. On the rare occasion that there is an error, We will advise You as soon as possible and it will be corrected.</p>
+            <p>3.6 Please note that any details and/or specifications for the Products and/or Services produced by Us (including any photographs of the Products) are intended as a guide only to give a general approximation.</p>
+            <p>3.7 We keep copies of all orders We receive and accept for a period of 5 years from the date of the order. This enables Us to process orders effectively, maintain high levels of customer service and deal with quality issues should they arise.</p>
+            <p>3.8 We will have Special Offers on Our Website from time to time, which, in the event of any dispute regarding the rules, conduct, results and all other matters relating to these matters, the decision will be left to the management of Our Website. No correspondence, beyond reason, or discussion shall be entered into relating to any disputes.</p>
+            <h4>4. Cancellation</h4>
+            <p>4.1 Once an order has been submitted your credit card will be charged. Our ordering process is streamlined so your order will immediately be sent to processing and then shipping. Due to the high volume of orders we receive we will be unable to cancel an order after submitted. Please order carefully.</p>
+            <h4>5. Delivery</h4>
+            <p>5.1 An estimated number of days for delivery will be provided after your order is placed. These dates vary due to carrier shipping practices, delivery location and the items you order. Products may be delivered in separate shipments. Any customs and taxes which may be charged by the relevant authorities in your country will be at your sole cost.</p>
+            <p>5.2 Dates for delivery are estimates only and are not guaranteed. We do not guarantee arrival dates or times. Time is not of the essence in relation to such dates. They are also subject to any matter beyond Our reasonable control including without limitation those events set out in paragraph 15.2. The delivery will be performed by the courier service company, which will be selected at Our sole discretion.</p>
+            <p>5.3 As a general rule, We will dispatch the Products to You on the same day as We accept Your order (subject to the Products being in stock) or the next working day if Your order is placed outside of our normal working hours. We charge for delivery and packaging. These delivery prices are detailed on the Website and are subject to change, depending on Your address, time of year, religious and/or national holidays, etc.</p>
+            <p>5.4 In most cases, orders will be delivered to You by special delivery, requiring a signature to confirm receipt. It is Your responsibility to ensure that there is someone at the delivery address to sign for the Products when delivered. Alternatively, it is Your responsibility to collect the Products from any postal collection depot and/or arrange an alternative delivery date if You are unavailable to sign for the Products.</p>
+            <p>5.5 We are not responsible for the Products and their safe delivery after they have left Our possession. If You have any issues regarding non-delivery, late delivery and/or damage to the Products during transit, You must take this up with the carrier. We will provide You with their details on your request.</p>
+            <p>5.6. You may familiarize with a list of countries to which the delivery is provided, while completing Your Order form.</p>
+            <h4>6. Prices and payment</h4>
+            <p>6.1 The price for Products and Services shall be as shown on the Website at the date of Our acceptance of Your order. All fees are payable in Euro currency. Prices for Products and Services could be changed without informing customers before the action of ordering. You agree to pay the current price at the time of placing the order.</p>
+            <p>6.2 Your shipment will be processed once we receive confirmation of payment.</p>
+            <p>6.3 Prices for the Products do not include applicable operating costs, and VAT that may be evaluated based on the amount of purchase, which You will be charged for in addition, according to the legislation of EU.</p>
+            <p>6.4 Customers may be charged Import Duties on shipments of NIVELE. These are charged by local Customs and are beyond our control. Any Import Duties are the responsibility of the customer.</p>
+            <p>6.5 If You do not agree to the price, do not proceed further with Your order. If We discover an error in the price of Products or Services You have ordered We will inform You as soon as possible and give You the option of either re-confirming Your order at the correct price or cancelling it. If We are unable to contact You, Your order will be cancelled. If You cancel an order due to an error in price and We have already received payment for the affected Products or Services, You will receive a full refund.</p>
+            <p>6.6 The price of Product is the set price at the time of purchase and may change from time to time if a new purchase is made. Under no circumstances will the price of today's purchase be a price guarantee of future unrelated purchases. The price does not include applicable shipping and handling costs as may be assessed based on quantity of purchase.</p>
+            <p>6.7 Payment is due at the time You place Your order: </p>
+            <p>6.8 We will not accept Your order and the Contract will not be concluded until such time as We receive confirmation from Our credit card merchantthat Your payment has been authorized and/or We have received payment in full in cleared funds.</p>
+            <p>6.9 If for any reason payment in full is not made, We may withhold or suspend delivery of Products or, as the case may be, Services.</p>
+            <h4>7. Property and risk</h4>
+            <p>7.1 Risk in the Products shall pass to You at the time of delivery. Delivery shall be deemed to occur at the time when the Products are passed to Our nominated carriers.</p>
+            <h4>8. Faulty Goods</h4>
+            <p>8.1 If You discover that a Product is faulty, You must notify Us of the defect within 7 (seven) days of the date of delivery.</p>
+            <p>8.2 We may ask You to return the faulty Products to Us for inspection before We send You a replacement. If the Products are faulty, We will replace the faulty Product at no additional cost to You and refund any reasonable costs You may have incurred in returning the faulty Product to Us.</p>
+            <h4>9. Return Policy </h4>
+            <p>9.1 We take great pride in the superior quality of our products and want you to be pleased with your purchase. We believe in offering the very best value, quality and selection to our customers. You may return any unused and unopened item purchased from us for any reason within thirty (30) days of your purchase. </p>
+            <p>Your complete satisfaction is our ultimate goal. You may return any item shipped by NIVELE, keeping the following in mind: </p>
+            <ul>
+              <li>You should return the item to us within 30 days of your purchase date.</li>
+              <li>We do not accept items back that have been opened or used. Opened Items are Non Refundable.</li>
+              <li>Shipping and Handling Fees are Non Refundable.</li>
+            </ul>
+            <p>To request a refund you must obtain an RMA (Return Authorization). Requests must be made online and submitted with your order information and explanation of the why you wish to return the product. Please do not call for an RMA. If you return your product without a RMA number, you will not be refunded. Shipping and handling charges are non-refundable. For returns, you must carefully package the product, you are responsible for the cost of return shipping, and we must physically receive the return at our Fulfillment centre within the 30 day periodof your purchase date. We will provide you with the address of Fulfillment centre in the e-mail. Company reserves the right, at its sole discretion, to reject any return that does not comply with these requirements. Once your return has been received, Your refund will be credited back to your bank account, and may take up to 14 business days to show on your statement, depending on your bank's speed of processing.</p>
+            <p>9.2 NIVELE reserves the right to refuse to refund all customers who make repeated requests for refunds or who, in the opinion of NIVELE, requires refunds in bad faith.</p>
+            <h4>10. Billing Errors</h4>
+            <p>10.1 If you believe that you have been billed in error, please notify our customer service representative at the numbers <a class="telefone" href="tel:4654544">4654544</a> or sending e-mail at   <a href="mailto:mail">mail</a>. If we do not hear from you within 30 days after such billing error first appears on any account statement, the billing will be deemed accepted by you for all purposes, including resolution of inquiries made by your credit card issuer. You are deemed to have released Company from all liabilities and claims of loss resulting from any error or discrepancy that is not reported to Company within thirty (30) days of its appearance on your credit card account statement.</p>
+            <h4>11. Data Protection</h4>
+            <p>11.1 You must register with NIVELE in order to access certain functions of the Website. You must provide current, complete and accurate information about yourself when registering. You agree that such information is truthful and complete. You agree to maintain and keep your personal information current and will update your information as necessary. Without your true information, NIVELE cannot be held responsible for any sign-in or access issues. Once you have completed filling in your personal and payment information and staying “rush my order” box, you have provided your approval and electronic signature for this Terms, and thus, authorization is received. Only then can the charge initiation be confirmed.</p>
+            <p>11.2 We store your personal information on our computers, and we believe we have appropriate security measures in place to protect your personal information. However, we cannot guarantee our security measures will prevent our computers from being accessed without authorization and your personal information stored on them stolen, deleted or changed. We assume no responsibility for such unauthorized actions.</p>
+            <p>11.3 When You use Our Website, You will be asked to provide certain personal information such as Your name, address, email address, phone number, contact details, credit/debit cards or other payment details, etc. We will store the data You provide to Us on computers or otherwise, except financial information, such as credit/debit cards details or other payment details, which will be passed to third parties, namely to Our chosen credit card merchant services provider ( payment processor) . The purposes for which Your personal data will be processed are set out in this Terms.</p>
+            <p>11.4 We will comply with the requirements of all data protection legislation in force. In particular, You may request a copy of any personal data We hold about You upon written application. Please note that We reserve the right to charge the current statutory fee for providing You with such information.</p>
+            <p>11.5 We will process Your personal data in an ethical manner. It will be used for the following purposes:</p>
+            <p>11.5.1 to process Your order;</p>
+            <p>11.5.2 where applicable, to administer Your membership of the Website;</p>
+            <p>11.5.3 to administer Our Website services which may involve sharing information with Our services providers;</p>
+            <p>11.5.4 to administer Our business;</p>
+            <p>11.5.5 for assessment and analysis (e.g. market, customer, product analysis) to enable Us to review, develop and improve the services which We offer and to enable Us to provide You with relevant information through Our marketing information;</p>
+            <p>11.5.6 to notify You by email or telephone of any Products that We think may be of interest to You unless You inform Us that You do not wish to receive such information.</p>
+            <p>11.6 We may also disclose Your information to anyone to whom We transfer or may transfer Our business and/or Our rights and duties under the Contract with You or to any regulatory or government authority where We are legally required to do so.</p>
+            <p>11.7 If You do not wish Us to notify You by post of any additional products or services that We think may be of interest to You, please inform us by calling or sending e-mail.</p>
+            <p>11.8 We try to ensure that all data we hold about our customers is up to date and correct. Therefore, if any of your personal details change, please let Us know by calling us or sending e-mail.</p>
+            <h4>12. Limitation of Liability</h4>
+            <p>12.1 We shall have no Liability to You for any loss of profit, business, revenue or income, loss of anticipated savings, lost data, damage to goodwill, business interruption, economic and/or other loss which, at the time You entered in to this Contract was not a reasonably foreseeable consequence of Us breaching these Terms and conditions, for example, if You and/or We could not have contemplated such losses before or when we entered into a Contract.</p>
+            <p>12.2 We do not guarantee that the Website will be compatible with Your PC and We accept no Liability for any violation and/or loss of data held on Your PC, or any Liability for any other loss or damage of any kind caused to Your PC resulting from use of the Web Site.</p>
+            <p>12.3 By placing a order, you agree that we and our owner(s), parent, subsidiaries, affiliates, agents, representatives, and employees will have no liability whatsoever for any injuries, losses, claims, damages or any special, exemplary, punitive, indirect, incidental or consequential damages of any kind, whether based in Contract, tort, strict liability or otherwise, resulting from any use of the Website, the product or any service offered on this Website, any failure or delay by us in connection with the web site, the product or any service offered on this Website, the performance or non-performance of the Website, the product or any service offered on this Website even if we have been advised of the possibility of damages. This disclaimer of liability applies to any damages or injury caused by any failure of performance, error, omission, interruption, deletion, defect, delay in operation, computer virus, communications line failure, theft or destruction, or unauthorized access to, alteration of, or use of your information. Notwithstanding this disclaimer, if we are found liable for any loss or damage which arises out of, or is in any way connected with, any of the occurrences described in this paragraph, then our liability will in no event exceed, in total, the sum of USD 100.00 (one hundred US dollars).</p>
+            <h4>13. Indemnification</h4>
+            <p>13.1 You agree to defend, indemnify and hold harmless  <strong>NIVELE </strong>, its affiliates, licensors and service providers, and its and their respective officers, directors, employees, contractors, agents, licensors, suppliers, successors and assigns from and against any claims, liabilities, damages, judgments, awards, losses, costs, expenses or fees (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms or your use of the Product, including, but not limited to any use of the web site's content, services and products other than as expressly authorized in these Terms or your use of any information obtained from the web site.</p>
+            <h4>14. Limitation of Time to File Claims</h4>
+            <p>14.1 Any pretension you may have arising out of or relating to this Terms or the Website must be asserted pursuant to this Terms within one (1) year after the cause of pretension accrues, otherwise, such claim is permanently barred. If you have any pretension, kindly send it at the e-mail <a href="mailto:mail">mail</a>.</p>
+            <h4>15. General</h4>
+            <p>15.1 If any provision of these Terms is held by any competent authority to be invalid or unenforceable in whole or in part the validity of the other provisions of these terms and conditions and the remainder of the affected provision shall be unaffected and shall remain in full force and effect.</p>
+            <p>15.2 We shall have no Liability to You for any delay in performance to the extent that such delay is due to any event outside Our reasonable control including acts of God, denial of service attacks, internet disruption, non-performance by suppliers or subcontractors, war, flood, fire, labor disputes, sub-contractor delays, strikes, lock outs, riots, civil commotion, malicious damage, explosion, governmental action and any other similar events. If We are affected by any such event then time for performance shall be extended for a period equal to the period that such event or events delayed such performance.</p>
+            <p>15.3 All third party rights are excluded and no third party shall have any right to enforce a Contract. Any rights of a third party to enforce this Contract may be varied and/or extinguished by agreement between the parties.</p>
+            <p>15.4 Notwithstanding Your rights set out above, if You are unsatisfied with any aspects of the Services and/or Products that We have provided to You or have any queries or comments regarding these, please contact Us by calling <a class="telefone" href="tel:4654544">4654544</a> or sending e-mail at   <a href="mailto:mail">mail</a>.</p>
+            <h4>16. Content Disclaimer</h4>
+            <p><strong>16.1 The information on the Website is intended solely as a general educational aid. It's not intended as a substitute for professional advice and services from a qualified healthcare provider familiar with your unique facts. Always see the advice of your physician or other qualified healthcare provider regarding any medical condition before using the Product.</strong></p>
+            <h4>17. LEGAL DISCLAIMERr</h4>
+            <p>17.1 Warning - The safety of this product has not been determined.</p>
+            <p>17.2 Before using Nivele Cream for the first time, we strongly recommend applying a tiny amount to a small area of the body and waiting 24 hours to avoid a possible allergic reaction. If you experience any skin irritation, redness, swelling, or other adverse effects, discontinue using Nivele and seek medical treatment.</p>
+            <p>17.3 The information presented on this site is not presented with the intention of diagnosing any disease or condition or prescribing any treatment. It is offered as information only, for use in the maintenance and promotion of good health in cooperation with a licensed medical practitioner.</p>
+            <p>17.4 In the event that any individual should use the information presented on this website without a licensed medical practitioner's approval, that individual will be diagnosing for him or herself.</p>
+            <p>17.5 No responsibility is assumed by the author, publisher or distributors of this information should the information be used in place of a licensed medical practitioner's services. No guarantees of any kind are made for the performance or effectiveness of the preparations mentioned on this website. Furthermore, this information is based solely on the traditional and historic use of a given herb, or on clinical trials that are generally not recognized by a government agency or a medical organization.</p>
+            <p>17.6 This information has not been evaluated by the Food and Drug Administration, nor has it gone through the rigorous double-blind studies required before a particular product can be deemed truly beneficial or potentially dangerous and prescribed in the treatment of any condition or disease.</p>
+            <h4>18. Modification or Suspension of Web Site</h4>
+            <p>18.1 You agree that <strong>NIVELE </strong>, in its sole and absolute discretion, may make, and at any time, modify, alter, discontinue, or suspend its operation of this Website, or any part thereof, temporarily or permanently, without notice to you, and you agree that <strong>NIVELE </strong> will not be liable for the consequences of doing so.</p>
+            <h4>19. Ownership and Protection of Intellectual Property</h4>
+            <p>19.1 The Website and its entire contents, features and functionality (including but not limited to all information, software, text, displays, images, video and audio, and the design, selection and arrangement thereof), are owned by NIVELE, its licensors or other providers of such material. These Terms permit to use the web site and order Product for your personal, non-commercial use only. You must not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store or transmit any of the material on our web site, except to store copies of such materials in RAM incidental to your accessing and viewing those materials or store files that are automatically cached by your Web browser for display enhancement purposes. The company and any product names, such as NIVELE, and all related names, logos, products and service names, design and slogans are trademarks of NIVELE us or its affiliates or licensors. You must not use such marks without the prior written permission of NIVELE. All other names, logos, product and services names, designs and slogans on this web site are the trademarks of their respective owners.</p>
+            <h4>20. Links</h4>
+            <p>20.1 The Website may provide links to other World Wide Web sites or resources. NIVELE has not reviewed these websites and is not responsible for the accuracy, content, privacy policies or availability of information found on websites that link to or from any NIVELE Website. NIVELE cannot ensure that you will be satisfied with any products or services that you purchase from a third-party site that links to or from any NIVELE Website or third-party content on our sites. NIVELE does not endorse any of the merchandise, nor has NIVELE taken any steps to confirm the accuracy or reliability of any of the information contained in any third-party sites or content. NIVELE does not make any representations or warranties as to the security of any information (including, without limitation, credit card, and other personal information) You might be requested to give any third party, and You hereby irrevocably waive any claim against NIVELE with respect to such sites and third-party content. NIVELE strongly encourages you to make whatever investigation you feel necessary or appropriate before proceeding with any online or offline transaction with any of third parties. Neither NIVELE nor its affiliates, officers, directors, shareholders, employees, independent contractors, telecommunications providers, or agents shall be liable for any damages, including but not limited to direct, indirect, incidental, consequential, or punitive damages arising out of your use of third-party material or third-party. Deep linking to internal pages of this Website is expressly prohibited without prior written consent from NIVELE.</p>
+            <h4>21. SAFETY GUIDELINES</h4>
+            <p>21.1 You understand that You should not use this information to diagnose or treat any health problems or illnesses without consulting Your doctor or physician. You further understand that this Product is not intended for use by persons under 18 years of age. You also understand that the Product is not intended or to be used to treat any type of medical condition such as obesity. You agree that You either have consulted, or will consult, with a physician or doctor before using any of Our Products, particularly if You suffer from any medical condition including, but not limited to, strokes, high blood pressure, heart, liver, kidney or thyroid disease, diabetes, anemia, depression, anxiety, other psychiatric conditions, a family history of these or other medical conditions, or if taking any prescription, OTC and/or other herbal medications, and You agree that you will cease immediately from taking or using Our Products if You experience any ill effects or unintended side effects of any Product. NIVELE endeavors to provide You with accurate information about Our Products. You understand and agree that the information NIVELE conveys about or Products and/or the efficacy of Our Products, is obtained from independent third parties such as news agencies, scientific reports, and scientific / research entities (&quot;Third Parties&quot;). NIVELE does not warrant or represent that such information is error-free, and NIVELE does not represent or endorse any Third Parties or the methods that they use to arrive at their conclusions. All Product specifications, performance data, and other information on the Website is for informational and illustrative purposes only, and do not constitute a guarantee or representation that the Products will conform to such specifications or performance data.</p><br>
+            <p>We do not guarantee that you will have any specific or particular result or benefit from the Product, or that your experience will match those of others who use the Product.</p><br>
+            <p>In each case before using NIVELE seek advice from a health practitioner before use it.</p><br><br>
+            <p></p>
+          </div><a class="close_btn" href="#">Close</a>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="js/jquery.event.move.js"></script>
+      <script src="js/jquery.twentytwenty.js"></script>
+      <script src="js/jquery.scrollbar.min.js"></script>
+      <script src="js/jquery.bxslider.min.js"></script>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>
